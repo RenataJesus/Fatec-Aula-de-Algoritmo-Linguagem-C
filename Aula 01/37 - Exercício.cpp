@@ -11,7 +11,7 @@ Os números devem ser obrigatoriamente maiores que zero. */
 main (){
 	
 	setlocale(LC_ALL, "Portuguese");
-
+/*
 	 int numero01,numero02, numero03;
 	
 		printf("Digite o primero número:  ");
@@ -23,7 +23,7 @@ main (){
 		printf("Digite o terceiro número:  ");
 		scanf("%d", &numero03);
 		
-	if(numero01<0 && numero02<0 && numero03<0){
+	if(numero01<=0 && numero02<=0 && numero03<=0){
 		printf("Números inválidos");
 		exit(0);
 	}	
@@ -45,6 +45,21 @@ main (){
 			printf("Os número %d, é ímpar\n", numero03);
 		}
 			
+		*/
+		int numero;
 		
+		for (int i = 1; i<4; i++){
+			printf("\n\nDigite o %dº numero:", i);
+			scanf("%d", &numero);
+			
+			if(numero <= 0){
+				printf("Numero menor ou igual a zero, invalido!\n");
+			} else if(numero % 2 == 0){
+				printf("Numero par\n");
+			} else {
+				printf("Numero impar\n");
+			}
+			
+		}
 	system("pause");
 }
