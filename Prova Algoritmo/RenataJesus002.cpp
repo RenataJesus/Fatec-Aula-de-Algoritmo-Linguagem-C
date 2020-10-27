@@ -8,7 +8,7 @@
 
 base as seguintes informacoes:
 A base da lata tem a forma de um quadrado
-A formula para calcular o volume da lata é:
+A formula para calcular o volume da lata Ã©:
 (Area da base da lata) * altura da lata 
 
 */
@@ -24,7 +24,7 @@ main (){
    scanf("%f",&alturaLata);
    
    volumeLata = ladoLata*ladoLata*alturaLata;
-   printf("\nO volume da lata de tinta é %.2f  ", volumeLata );
+   printf("\nO volume da lata de tinta Ã© %.2f  ", volumeLata );
 	
 	
 }
