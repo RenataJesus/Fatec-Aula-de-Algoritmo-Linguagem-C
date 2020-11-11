@@ -4,34 +4,62 @@
  #include<locale.h>
  
  /*
- Construa um algoritmo para calcular o Volume
-Formulas:
-X Area do poligono = Lado1 x Lado2
-X Area da circunferencia = pi x raio2
-X Volume = (Area do poligono ¡V Area da circunferencia) x altura da figura.
+ Ler um número qualquer positivo e maior que zero.
 
-Observacao:
+Se o valor do número elevado à quarta for par e múltiplo de cinco o algoritmo
+deverá imprimir a seguinte mensagem:
 
-X Nenhum valor atribuido pelo usuario pode ser nulo ou negativo.
-X O diametro do circulo nao pode ser maior ou igual a menor lateral do
-poligono.
-X Se o usuario atribuir um valor indevido, uma mensagem de erro devera ser
-emitida ao final do processo.
+- “O número digitado foi __.”
+- “Seu valor elevado ao quadrado é __.”
+- “Seu valor elevado ao cubo é __.”
+- “Seu valor elevado a sétima é __.”
+
+Se o valor for ímpar o algoritmo deverá imprimir a seguinte mensagem:
+
+- “O número digitado foi __.”
+- “Sua raiz quadrada é __.”
+- “Sua raiz cúbica é __.”
+- “Sua raiz a sétima é __.”
+
+Observação: Se o usuário digitar um valor inválido o algoritmo deverá emitir uma
+mensagem de erro.
  
  */ 
  main(){
 	setlocale(LC_ALL, "Portuguese");
  
-  float  areaPoligono, lado1, lado2, areaCircunferencia, raio, alturaFigura;
+  int  numero;
   
-  	printf("Digite o primeiro lado do poligono: ");
-  	scanf("%f", &lado1);
-  	
-  	printf("\nDigite o segundo lado do poligono: ");
-  	scanf("%f", &lado2);
-  	
-  	printf("\nDigite o raio do circulo: ");
-  	scanf("%f", &raio);
-  	
-  	if(lado1 && lado)
+  	printf("Digite um número: ");
+  	scanf("%d", &numero);
+    	
+  	if(numero%2==0){
+  		printf("O número digitado foi: %d\n", numero);
+  		
+		float quadrado = pow(numero,2);
+  		printf("\nSeu valor ao quadrado é: %.2f\n", quadrado);
+  		
+		float cubo = pow(numero,3);
+		printf("\nSeu valor ao cubo é: %.2f\n", cubo);
+  		
+  		float setima = pow(numero,7);
+		printf("\nSeu valor a sétima é: %.2f\n", setima);
+  		
+	  }else if(numero%2!=0){
+	  	
+		printf("O número digitado foi: %d\n\n", numero);
+  
+  		float quadrado = pow(numero,2);
+  		printf("\nSeu valor ao quadrado é: %.2f\n", quadrado);
+  		
+		float raiz = sqrt(numero);
+		printf("\nSua raiz quadrada é: %.2f\n", raiz);
+		
+  		float raizCubica = cbrt(numero);
+		printf("\nSua raiz cúbica é: %.2f\n", raizCubica);
+		
+		float raizSetima = sqrt(pow(numero,7));
+		printf("\nSua raiz sétima é: %.2f\n", raizSetima);
+	  	
+	  }
  }
