@@ -23,41 +23,51 @@ Informar o maior numero.
 	printf("Digite o terceiro número: ");
   	scanf("%d", &numero3);
 	    	
-  	if((numero1>numero2) && (numero1>numero3)){
-  		printf("O maior número é %d\n", numero1);
-  		
-	
-  		
-	  }else if((numero2>numero3) && (numero2>numero1)){
-	  	
-		printf("O maior número é %d\n", numero2);
-	  	
-	  }else if((numero3>numero2) && (numero3>numero1)){
-	  	
-		printf("O maior número é %d\n", numero3);
-	  	
-	  }
-	  
-	  if(numero1%2==0){
-  		printf("O %d é par\n", numero1);
-  	  }else if (numero1%2!=0) {
-  	  	printf("O %d é ímpar\n", numero1);
-		}else if(numero1<0){
-		 printf("O %d é nulo\n", numero1);
-		}
+       if((numero1%2==0) && (numero1>=0)){
+  			printf("\nO %d é par\n", numero1);
+  	  	}else if(numero1<0){
+    		printf("\nO %d é é nulo\n", numero1);
+		} 
 		
-	  if(numero2%2==0){
-  		printf("O %d é par\n", numero2);
-  	  }else if (numero2%2!=0) {
-  	  	printf("O %d é ímpar\n", numero2);
+		if ((numero1%2!=0)&& (numero1>=0)) {
+  	  		printf("\nO %d é ímpar\n", numero1);
+		}else if(numero1<0){
+    		printf("\nO %d é é nulo\n", numero1);
+	    } 
+		
+	  	if((numero2%2==0) && (numero2>=0)){
+  			printf("\nO %d é par\n", numero2);
+  	  	}else if(numero2<0){
+    		printf("\nO %d é é nulo\n", numero2);
+	 	}
+	  
+	  	if ((numero2%2!=0)&& (numero2>=0)){		
+  	  		printf("\nO %d é ímpar\n", numero2);
 		}else if(numero2<0){
-		 printf("O %d é nulo\n", numero2);
-		}
-	 if(numero3%2==0){
-  		printf("O %d é par\n", numero3);
-  	  }else if (numero3%2!=0) {
-  	  	printf("O %d é ímpar\n", numero3);
-		}else if(numero3<0){
-		 printf("O %d é nulo\n", numero3);
-		}
+    		printf("\nO %d é é nulo\n", numero2);
+	    }
+	   
+	   	if((numero3%2==0) && (numero3>=0)){
+  			printf("\nO %d é par\n", numero3);
+  	  	}else  if(numero3<0){
+    		printf("\nO %d é é nulo\n", numero3);
+      	}
+		
+	   	if ((numero3%2!=0)&& (numero3>=0)){		
+  	  		printf("\nO %d é ímpar\n", numero3);
+	 	} else  if(numero3<0){
+    		printf("\nO %d é é nulo\n", numero3);
+      	}
+		
+		
+		
+		if((numero1>numero2) && (numero1>numero3)){
+  			printf("\nO maior número é %d\n", numero1);
+  		  		
+	    }else if((numero2>numero3) && (numero2>numero1)){
+	  		printf("\nO maior número é %d\n", numero2);
+	  	
+	  	}else if((numero3>numero2) && (numero3>numero1)){
+	  		printf("\nO maior número é %d\n", numero3);
+	  	}
  }
