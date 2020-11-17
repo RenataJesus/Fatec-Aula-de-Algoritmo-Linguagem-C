@@ -37,4 +37,27 @@ Informar o maior numero.
 		printf("O maior número é %d\n", numero3);
 	  	
 	  }
+	  
+	  if(numero1%2==0){
+  		printf("O %d é par\n", numero1);
+  	  }else if (numero1%2!=0) {
+  	  	printf("O %d é ímpar\n", numero1);
+		}else if(numero1<0){
+		 printf("O %d é nulo\n", numero1);
+		}
+		
+	  if(numero2%2==0){
+  		printf("O %d é par\n", numero2);
+  	  }else if (numero2%2!=0) {
+  	  	printf("O %d é ímpar\n", numero2);
+		}else if(numero2<0){
+		 printf("O %d é nulo\n", numero2);
+		}
+	 if(numero3%2==0){
+  		printf("O %d é par\n", numero3);
+  	  }else if (numero3%2!=0) {
+  	  	printf("O %d é ímpar\n", numero3);
+		}else if(numero3<0){
+		 printf("O %d é nulo\n", numero3);
+		}
  }
