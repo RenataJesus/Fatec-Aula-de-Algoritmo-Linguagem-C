@@ -4,9 +4,9 @@
  #include <string.h>
  
   /*
-Exercício 71
-• Criar um algoritmo que receba dois números e imprima os números
-compreendidos entre estes números.
+ExercÃ­cio 71
+â€¢ Criar um algoritmo que receba dois nÃºmeros e imprima os nÃºmeros
+compreendidos entre estes nÃºmeros.
  */
  
   
@@ -14,19 +14,14 @@ main(){
 	setlocale(LC_ALL, "Portuguese");
   	
 	int contador, number1, number2;
-	printf("Digite um número: ");
+	printf("Digite um nÃºmero: ");
 	scanf ("%d", &number1);
-	printf("Digite outro número: ");
+	printf("Digite outro nÃºmero: ");
 	scanf ("%d", &number2);
-
-		
+	
 		for(contador=number1+1; contador<=number2; contador++){
-		
 			printf("%d, ", contador);
 		}
-			
-		
-		
 }
 			
 			
