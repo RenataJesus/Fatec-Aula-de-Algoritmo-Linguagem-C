@@ -4,8 +4,7 @@
  #include <string.h>
  
   /*
-Exercício 68 - Criar um algoritmo para imprimir a soma de todos os números de 0 à 100.iba na tela o valor a ser pago ao funcionário,
-adicionando 10% sobre o valor calculado.
+ExercÃ­cio 68 - Criar um algoritmo para imprimir a soma de todos os nÃºmeros de 0 Ã  100.
  */
  
   
@@ -13,7 +12,7 @@ main(){
 	setlocale(LC_ALL, "Portuguese");
   	
 	int contador = 0, number;
-	printf("Digite um número: ");
+	printf("Digite um nÃºmero: ");
 	scanf ("%d", &number);
 	
 
