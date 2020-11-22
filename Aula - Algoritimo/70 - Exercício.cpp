@@ -3,18 +3,16 @@
  #include<locale.h>
  #include <string.h>
  
-  /*
-Exercício 69
-• Criar um algoritmo que receba um número obrigatoriamente maior que zero e
-imprima todos os números de zero até o número digitado.
- */
+/*ExercÃ­cio 70
+â€¢ Criar um algoritmo que receba um nÃºmero obrigatoriamente menor que dez e
+imprima todos os nÃºmeros de vinte atÃ© o nÃºmero digitado.*/
  
   
 main(){
 	setlocale(LC_ALL, "Portuguese");
   	
 	int contador = 0, number;
-	printf("Digite um número maior que dez: ");
+	printf("Digite um nÃºmero maior que dez: ");
 	scanf ("%d", &number);
 	
 			if (number>10){
