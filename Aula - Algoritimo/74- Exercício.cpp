@@ -18,32 +18,21 @@ main(){
 
 	scanf("%d", &numero);
 
-	maior = menor = numero;
-
 	while(numero>0){
 
-		if(numero>maior)
+		if(numero>maior){
 			maior = numero;
-
-		if (numero<menor)
-
-			menor=numero;
-
+		}
+		if (numero<menor){
+			menor=numero;	
+		}	
 		printf("Digite um número inteiro: ");
-
 		scanf("%d", &numero);
-
 	}
 
 	printf("O maior número digitado foi: %d \n", maior);
-
 	printf("O menor número digitado foi: %d \n\n", menor);
-
 	printf("Fim do programa. \n\n");
-
-	system("pause");
-
-	return 0;
 
 }
 			
