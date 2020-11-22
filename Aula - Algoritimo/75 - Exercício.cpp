@@ -13,17 +13,14 @@ Atenção:
  */ 
  main(){
 	setlocale(LC_ALL, "Portuguese");
-
  
-for(int i=0; i<5; i++){
-    float n; 
-    printf("Digite um número: ");
-	scanf("%f", &n);
-	 
- 	float quadrado = pow(n,2);
- 	printf("número %.1f, seu quadrado é %.1f\n ", n, quadrado);
- 	
- }
+	for(int i=0; i<5; i++){
+    	float numero; 
+   		printf("Digite um número: ");
+		scanf("%f", &numero);
+	  	float quadrado = pow(numero,2);
+ 		printf("número %.1f, seu quadrado é %.1f\n ", n, quadrado);
+ 	}
 
  }
 
