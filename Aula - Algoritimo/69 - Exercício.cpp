@@ -1,33 +1,33 @@
-#include<stdlib.h>
+#include<stdio.h>
+ #include<stdlib.h>
  #include<math.h>
  #include<locale.h>
- #include <string.h>
  
-  /*
-Exercício 68 - Criar um algoritmo para imprimir a soma de todos os números de 0 à 100.iba na tela o valor a ser pago ao funcionário,
-adicionando 10% sobre o valor calculado.
- */
- 
-  
-main(){
+ /*
+Exercício 69
+• Criar um algoritmo que receba um número obrigatoriamente maior que zero e
+imprima todos os números de zero até o número digitado.
+
+ */ 
+ main(){
 	setlocale(LC_ALL, "Portuguese");
-  	
-	int contador = 0, number;
+	int numero;
 	printf("Digite um número: ");
-	scanf ("%d", &number);
-	
-
-             while( contador <= number )
-             {
-               printf( "%d, ", contador);
-               contador += 1;
-             }
-
-             printf("ACABOU !!!!\n");
-
-	
+	scanf("%d", &numero);
+	int inicio=0;
+			
+			if(numero>0){
+				while(inicio<=numero){
+				printf("%d ...", inicio);
+				inicio++;
+				
+				}else{
+					printf("número inválido!");
+				}
+				
+			}
 }
 
-
-  
  
+
+
