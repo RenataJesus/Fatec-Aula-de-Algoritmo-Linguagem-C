@@ -18,9 +18,10 @@ ou 5.
 		    if(i % multiploTres == 0 || i % multiploCinco == 0){
 		        resultado += i;
 		    }
+		    
 		}
 			    
-			   
+			  printf("A soma de todos os números abaixo de 1000 que são múltiplos de 3 ou 5 é: %d", resultado); 
 }
 
  
